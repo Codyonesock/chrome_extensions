@@ -1,0 +1,16 @@
+{
+   "manifest_version": 3,
+   "name": "Farewell annoying DL list",
+   "version": "1.0.0",
+   "description": "Clear the annoying dl list",
+   "icons": {
+      "128": "images/pepeno.png",
+      "16": "images/pepeno.png",
+      "32": "images/pepeno.png",
+      "48": "images/pepeno.png"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "permissions": ["downloads"]
+}
