@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body { font-family: sans-serif; }
+      #popup-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+      }
+      #rowSlider {
+        width: 100%;
+        max-width: 250px;
+      }
+      #rowValue {
+        margin-left: 10px;
+      }
+      label {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      #image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+      input[type="range"] {
+        width: 100%;
+      }
+      input[type="checkbox"] {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="popup-container">
+      <img src="icon.png" alt="Extension icon" id="image">
+      <label for="rowSlider">
+        Items per row:
+        <input type="range" min="1" max="10" value="4" id="rowSlider">
+        <span id="rowValue">4</span>
+      </label>
+      <label for="hideShorts">
+        Hide Shorts:
+        <input type="checkbox" id="hideShorts">
+      </label>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
